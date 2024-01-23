@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MovieInfo>
+    <movie>
+        <movieNo>1</movieNo>
+        <movieTitle>The Shawshank Redemption</movieTitle>
+        <actorName>Tim Robbins</actorName>
+        <releaseYear>1994</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>2</movieNo>
+        <movieTitle>The Godfather</movieTitle>
+        <actorName>Marlon Brando</actorName>
+        <releaseYear>1972</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>3</movieNo>
+        <movieTitle>Inception</movieTitle>
+        <actorName>Leonardo DiCaprio</actorName>
+        <releaseYear>2010</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>4</movieNo>
+        <movieTitle>Forrest Gump</movieTitle>
+        <actorName>Tom Hanks</actorName>
+        <releaseYear>1994</releaseYear>
+    </movie>
+    <movie>
+        <movieNo>5</movieNo>
+        <movieTitle>The Dark Knight</movieTitle>
+        <actorName>Christian Bale</actorName>
+        <releaseYear>2008</releaseYear>
+    </movie>
+</MovieInfo>
