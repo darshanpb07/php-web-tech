@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Check if username is empty
+    if (username.trim() === "") {
+        alert("Username cannot be empty.");
+        return false;
+    }
+
+    // Check if password is empty
+    if (password.trim() === "") {
+        alert("Password cannot be empty.");
+        return false;
+    }
+
+    // Check username length
+    if (username.length < 4 || username.length > 20) {
+        alert("Username must be between 4 and 20 characters.");
+        return false;
+    }
+
+    // Check password length
+    if (password.length < 6 || password.length > 20) {
+        alert("Password must be between 6 and 20 characters.");
+        return false;
+    }
+
+    // Additional checks can be added, such as special character requirements, etc.
+
+    // If all checks pass, return true to submit the form
+    return true;
+}
+
+</script>
+</html>
+
+
+
+
+
+

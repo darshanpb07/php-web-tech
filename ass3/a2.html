@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Append Example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Example Content</h2>
+  <p id="paragraph">This is an example paragraph.</p>
+  <ol id="numbered-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+</body>
+<script>
+  $(document).ready(function(){
+    // Append text to the paragraph
+    $("#paragraph").append(" Appended text to paragraph.");
+
+    // Append new item to the numbered list
+    $("#numbered-list").append("<li>New Item</li>");
+});
+</script>
+</html>

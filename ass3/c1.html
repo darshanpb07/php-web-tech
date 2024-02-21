@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Name Input</title>
+    <style>
+        #studentName {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="studentName" placeholder="Enter student name">
+
+    <script>
+        function changeStyle() {
+            var nameInput = document.getElementById("studentName");
+            var name = nameInput.value.trim();
+
+            if (name !== "") {
+                nameInput.style.color = "red";
+                nameInput.style.fontSize = "18px";
+            } else {
+                var image = document.createElement("img");
+                image.src = "https://via.placeholder.com/150";
+                image.onload = function () {
+                    this.style.width = "200px";
+                };
+                image.onmouseover = function () {
+                    this.style.width = "250px";
+                };
+                image.onmouseout = function () {
+                    this.style.width = "200px";
+                };
+                image.onclick = function () {
+                    this.style.width = "300px";
+                };
+                image.onmouseup = function () {
+                    this.style.width = "400px";
+                };
+
+                nameInput.parentNode.insertBefore(image, nameInput.nextSibling);
+            }
+        }
+
+        document.getElementById("studentName").onblur = changeStyle;
+    </script>
+
+</body>
+
+</html>

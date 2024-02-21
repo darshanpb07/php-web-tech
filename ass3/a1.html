@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Append Example</title>
+</head>
+
+<body>
+    
+</body>
+<script>
+    // Display a prompt to ask the user if they have started preparing
+    var response = prompt("Exams are near, have you started preparing for? (yes/no)");
+
+    // Check user's response
+    if (response !== null) {
+        response = response.toLowerCase(); // Convert response to lowercase for case-insensitivity
+
+        // Display different messages based on user's response
+        if (response === "yes") {
+            alert("Great! Keep up the good work!");
+        } else if (response === "no") {
+            var confirmation = confirm("Are you sure you haven't started preparing?");
+            if (confirmation) {
+                alert("It's time to start preparing now!");
+            } else {
+                alert("That's good to hear! Keep it up!");
+            }
+        } else {
+            alert("Invalid response. Please enter 'yes' or 'no'.");
+        }
+    } else {
+        alert("You have cancelled the prompt. Please refresh the page to try again.");
+    }
+</script>
+
+</html>

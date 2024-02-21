@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert Text Before and After Image</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Example Content</h2>
+  <img id="image" src="ai_robot.jpg" alt="AI Image">
+</body>
+<script>
+    $(document).ready(function(){
+    // Insert text before the image
+    $("#image").before("<p>This is the text before the image.</p>");
+
+    // Insert text after the image
+    $("#image").after("<p>This is the text after the image.</p>");
+});
+</script>
+</html>
+
+
